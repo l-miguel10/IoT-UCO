@@ -2,11 +2,11 @@
 #include <ESP8266HTTPClient.h>
  
 //WIfi SSID & PASS
-const char* ssid = "xxxxx";
-const char* password = "xxxxx";
+const char* ssid = "IoT-UCO";
+const char* password = "LifeisIoT";
 
 //HTTP Server URL
-String url = "http://xxxxxxxxxx";
+String url = "http://192.168.1.122:8000/users/1/items/Jota";
 
 /********* Setup wifi ***************************
    setup wifi connect to wifi with the constants

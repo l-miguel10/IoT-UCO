@@ -6,8 +6,8 @@
 //#include <ESP8266WiFi.h>
 
 // Replace with your network credentials
-const char* ssid     = "Familia Aristizabal";
-const char* password = "aristi2018";
+const char* ssid     = "IoT-UCO";
+const char* password = "LifeisIoT";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -130,9 +130,9 @@ void loop(){
             client.println("<p>LED - State " + LEDstate + "</p>");
             // If the output4State is off, it displays the ON button       
             if (LEDstate=="on") {
-              client.println("<p><a href=\"/2/off\"><button class=\"button\">ON</button></a></p>");
+              client.println("<p><a href=\"/2/off\"><button class=\"button\">OFF</button></a></p>");
             } else {
-              client.println("<p><a href=\"/2/on\"><button class=\"button button2\">OFF</button></a></p>");
+              client.println("<p><a href=\"/2/on\"><button class=\"button button2\">ON</button></a></p>");
             }
             client.println("</body></html>");
             
